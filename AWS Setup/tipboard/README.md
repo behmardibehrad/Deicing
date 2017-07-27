@@ -16,22 +16,32 @@
 ##
 				
 #### 5. Create a new virtual environment:
-    	- virtualenv "virtual-env-name-here"
+    	- virtualenv <name_of_virtual-env>
 ##
 		
 #### 6. Activate the virtual environment:
-    	- source "virtual-env-name-here"/bin/activate
+    	- source <name_of_virtual-env>/bin/activate
 ##
 
 #### 7. Install tipboard using pip:
 		- pip install tipboard
+##
 
 #### 8. Confirm the installation: 	
 		- tipboard runserver [<host>] [<port>]
-
-#### 9. Point the web-browser to http://localhost:7272
-		- you should see an empty dashboard
-
 ##
-#### 10. To exit the enviroment use this command:
+
+#### 9. Create a new tipboard project:
+		- tipboard create_project <name_of_project>
+##
+
+#### 10. Confirm the installation: 	
+		- tipboard runserver 0.0.0.0 7272
+##		
+		
+#### 11. Point the web-browser to AWS_Public_ip:7272
+		- you should see an empty dashboard
+##
+
+#### 12. To exit the enviroment use this command:
 		- deactivate
